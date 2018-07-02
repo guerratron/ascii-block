@@ -1,0 +1,119 @@
+Initialize engine version: 5.4.5p5 (8c4c93a90556)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon R9 M265X (ID=0x6823)
+    Vendor:   ATI
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.047 seconds
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\diner\workspace-UNITY\Ascii-Blocks\Builds\Ascii-Block_Data\Managed\Boo.Lang.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.839157 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 3f34 -> priority: 1 
+  Thread -> id: 35ac -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.144240 ms
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 644.
+Total: 0.469254 ms (FindLiveObjects: 0.043928 ms CreateObjectMapping: 0.026274 ms MarkObjects: 0.329668 ms  DeleteObjects: 0.068971 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.234424 ms
+
+Unloading 77 unused Assets to reduce memory usage. Loaded Objects now: 517.
+Total: 0.571480 ms (FindLiveObjects: 0.062403 ms CreateObjectMapping: 0.032843 ms MarkObjects: 0.300520 ms  DeleteObjects: 0.175713 ms)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+death
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Next Level, to: 5
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.854028 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 645.
+Total: 0.443390 ms (FindLiveObjects: 0.034075 ms CreateObjectMapping: 0.026685 ms MarkObjects: 0.346911 ms  DeleteObjects: 0.035307 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.309874 ms
+
+Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 517.
+Total: 0.509898 ms (FindLiveObjects: 0.050907 ms CreateObjectMapping: 0.022580 ms MarkObjects: 0.300930 ms  DeleteObjects: 0.134248 ms)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+death
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+death
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+True
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.663534 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 645.
+Total: 0.530015 ms (FindLiveObjects: 0.043107 ms CreateObjectMapping: 0.024632 ms MarkObjects: 0.355533 ms  DeleteObjects: 0.106331 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.500778 ms
+
+Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 517.
+Total: 0.525910 ms (FindLiveObjects: 0.044339 ms CreateObjectMapping: 0.023401 ms MarkObjects: 0.317352 ms  DeleteObjects: 0.140406 ms)
+
+Quit...
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+

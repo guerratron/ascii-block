@@ -1,0 +1,109 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// Archivo de niveles para ASCII-BLOCK                                                               //
+// by: Juan José Guerra Haba <dinertron@gmail.com> - GuerraTron-18                                   //
+//                                                                                                   //
+// Además de este archivo para confeccionar niveles de bloques, pueden personalizarse algunos        //
+// elementos si incluimos imágenes a modo de texturas para cada uno de ellos. Eso sí, con unos       //
+// nombres predefinidos y una estructura de carpetas particular:                                     //
+//  - Una carpeta 'Textures' que incluya más carpetas con el nombre del número de cada nivel que se  //
+//    desee personalizar, o por defecto se buscará una carpeta 'Default' para todos los niveles.     //
+//  - Dentro de las carpetas imágenes (png, jpg, gif o bmp) con alguno de los siguientes nombres     //
+//    claves: 'coin', 'wall', 'special'                                                              //
+//                                                                                                   //
+// Síntaxis:                                                                                         //
+//  Comentarios = '/' ó ';'                                                                          //
+//  Control     = '_' (new level)                                                                    //
+//  Bloques:                                                                                         //
+//    bloque = '@'                                                                                   //
+//    player = 'P'                                                                                   //
+//    enemy  = 'E'                                                                                   //
+//    coin   = 'C'                                                                                   //
+//    point  = 'P'                                                                                   //
+//    special= 'S'                                                                                   //
+//    empty  = ' ' (space)                                                                           //
+//                                                                                                   //
+// Atención:                                                                                         //
+//    - Los niveles deben terminar con un caracter de control 'línea baja' (_) para que el           //
+//      programa los tenga en cuenta; en una línea solitaria (sin más caracteres).                   //
+//    - Cada línea de texto se corresponderá a una fila de bloques (excepto comentarios o            //
+//      caracteres de control).                                                                      //
+//    - Máximo 35 filas con un máximo de 35 columnas cada una.                                                                //
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+;1
+@@@@@@@@@@@@@@@@
+@C@@...P....@@C@
+@....@....@....@
+@@@@@@....@@@@@@
+@C@....@@....@C@
+@.@....CC....@.@
+@...@@@@@@@@E..@
+@.....@CC@.....@
+@@@.C.@..@.C.@@@
+@.....@..@.....@
+@C............C@
+@@@@@@@@@@@@@@@@
+_
+;2
+
+
+
+ @@@@@ E  @@@@@
+ @CPC@  E @CCC@
+ @CCC@ E  @CCC@
+ @CCC@  E @CCC@
+ @CCC@ E  @CPC@
+ @@@@@  E @@@@@
+_
+//3
+@@@@@@@@@@@@@@@@
+@P@C@C@C@   @C @
+@ @ @ @ @ @ @@ @
+@ @ C @   @    @
+@ @ @ @@@@@ @@@@
+@ @ @ C @C     @
+@ C @C@ @@@.@@ @
+@ @@@@@    EC@ @
+@ @C@C@@@@@@.@ @
+@   @  C @ C @ @
+@C@ C @@ C @   @
+@@@@@@@@@@@@@@@@
+_
+;4
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@P@.C.@...@.E.@...@...@...@...@...@
+@...@...@...S...@...@...@...@...@.@
+@.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.@
+@.@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@.@
+@P@.C.@...@.E.@...@...@...@...@C@.@
+@...@...@...S...@...@...@...@.....@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+_
+;5
+@@@@@@@@@@@@@@@@@@@
+@         @     @P@C
+@ @@@@@@@ @ @ @ @ @
+@ @     @ @ @ @ @ @
+@ @ @@@ @ @ @ @ @ @
+@ @ @C@ @ @ @ @ @ @
+@ @ @   @ @ @ @ @ @
+@ @ @@@@@ @ @ @ @ @
+@ @       @ @ @ @ @
+@ @@@@@@@@@ @ @ @ @
+@          P@ @   @
+@@@@@@@@@@@@@E@@@@@
+_
+;6
+@@@@@@@@@@@@@@@@
+@CCCCCCCCCCCCCC@
+@P............P@
+@CCCCCCCCCCCCCC@
+@..............@
+@CCCCCCCCCCCCCC@
+@..............@
+@CCCCCCCCCCCCCC@
+@..............@
+@CCCCCCCCCCCCCC@
+@......E.......@
+@@@@@@@@@@@@@@@@
+_
