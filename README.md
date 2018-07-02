@@ -1,5 +1,6 @@
 # ASCII-BLOCK
   -----------
+  [![ASCII-Block logo](logo.png "ASCII-Block GitHub page")](http://guerratron.github.io/ascii-block "ASCII-Block page")
  
 ## DEFINICIÓN
    ----------
