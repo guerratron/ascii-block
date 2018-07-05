@@ -11,6 +11,10 @@
   
   > Este juego se ha programado enteramente con código *JS (Unity)*. Contiene un conversor (*parser*) de caracteres de texto a bloques gráficos.  
   
+## UTILIZACIÓN
+   -----------
+   El juego es un binario ejecutable (exe) para Windows. Se encuentra en la carpeta 'WinExe' y como ejemplo he incluido un archivo de niveles 'levels.lvl', por supuesto totálmente modificable, y una carpeta 'Textures'; ambos opcionales.
+  
 ## ESCENARIO
    ----------
    El escenario es un mundo virtual de **plataformas** en *3D* con limitación de sus dimensiones, donde si nos salimos de la plataforma morimos al caernos al vacío. El punto de vista es en **perspectiva** (por defecto), con la cámara en **3ª persona** y un tanto retirada de cada player.  
