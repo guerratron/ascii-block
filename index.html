@@ -1,65 +1,110 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Ascii-Block by guerratron</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/template.css" media="screen">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="javascript/main.js"></script> -->
+		<!-- SLICK SLIDE
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="javascripts/slick/slick-min.css"/> -->
   </head>
   <body>
+    <section class="page-header">
+			<img src="img/sello_unity.png" alt="js_ico" title="Unity Windows-Executable" style="position:absolute; left:2%;" />
+      <h1 class="project-name">Ascii-Block</h1>
+      <img src="img/ascii_block_logo.png" alt="ascii-block logo" title="Ascii-Block GitHub page" />
+      <h2 class="project-tagline">Emulate a 'Pseudo-Pacman' in 3D</h2>
+			<a href="http://guerratron.github.io/" class="btn" style=""><img src="img/home.png" alt="home_icon" title="Guerratron GitHub home page" /></a>
+      <a href="https://github.com/guerratron/ascii-block" class="btn">View on GitHub</a>
+      <a href="https://github.com/guerratron/ascii-block/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/guerratron/ascii-block/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <h1>Ascii-Block</h1>
-        <p>Emulate a 'Pseudo-Pacman' in 3D, where in addition to playing and having fun, you can <b>design your own levels</b> and even differentiate the types of objects used with custom textures..</p>
-      </header>
+    <section class="main-content">
+		
+      <blockquote>
+<hr />
 
-      <div id="banner">
-        <span id="logo"></span>
+        <nav>
+					<span class="caption">INDEX:</span>
+					<ul id="TOC">
+						<li><a data-scroll href="#ascii-block" title="introduction">Introduction</a></li>
+						<li><a data-scroll href="#usage" title="how it use">Usage</a></li>
+						<li><a data-scroll href="#scenario" title="history scenary">Scenario</a></li>
+						<li><a data-scroll href="#target" title="game objective">Objective</a></li>
+						<li><a data-scroll href="#new_levels" title="new levels create">New Levels</a></li>
+						<li><a data-scroll href="#sintax" title="sintax rules">Sintax</a></li>
+						<li><a data-scroll href="#custom_textures" title="how you custom the blocks">Custom Textures</a></li>
+						<li><a data-scroll href="#special_keys" title="hotkeys and shortcuts for game">Special Keys</a></li>
+						<!-- <li><a href="#requirements" title="script requirements">Requirements</a></li>
+						<li><a href="#instalation" title="script install">Instalation</a></li>
+						<li><a href="#usage" title="the script usage">Usage</a></li>
+						<li><a href="#web-flow-creation" title="the script web-flow-creation">Web flow creation</a></li>
+						<li><a href="#developing" title="develop by">Developing</a></li>
+						<li><a href="#tools" title="tools for write code">Tools</a></li>
+						<li><a href="#author" title="script author">Author</a></li> -->
+					</ul>
+					<br class="clearfix" />
+				</nav>
+		<!-- SLICK SLIDE
+		<section class="carousel" style="text-align: center;">
+			
+				<div class="slick-slide-target1">
+					<div>
+						<a href="img/zonesGUI.png"> <img src="img/zonesGUI.png" alt="GUI areas" title="GUI areas" /> </a>
+						<span style="font-size:smaller;">buttons, canvas, options, footer, ...</span>
+					</div>
+					<div>	<a href="img/zoneOptions2.png"> <img src="img/zoneOptions2.png" alt="GUI options area" title="options area" /> </a> </div>
+					<div>
+						<a href="img/zoneCoordinates.png"> <img src="img/zoneCoordinates.png" alt="GUI coordinates area" title="coordinates area" /> </a>
+						<span style="font-size:smaller;">Coordinates area</span>
+					</div>
+					<div>	<a href="img/ex1.jpg"> <img src="img/ex1.jpg" alt="example-1" title="bexample 1" /> </a> </div>
+					<div>	<a href="img/ex2.png"> <img src="img/ex2.png" alt="example-2" title="example 2" /> </a> </div>
+					<div>	<a href="img/ex3.png"> <img src="img/ex3.png" alt="example-3" title="example 3" /> </a> </div>
+					<div>	<a href="img/ex4.png"> <img src="img/ex4.png" alt="example-4" title="example 4" /> </a> </div>
+					<div>	<a href="img/ex5.png"> <img src="img/ex5.png" alt="example-5" title="example 5" /> </a> </div>
+					<div>	<a href="img/canvasShapesButtons.png"> <img src="img/canvasShapesButtons.png" alt="GUI buttons area" title="buttons area" /> </a> </div>
+				</div>
+		</section> -->
 
-        <a href="https://github.com/guerratron/ascii-block" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/guerratron/ascii-block/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/guerratron/ascii-block/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <blockquote>
-<hr>
-
-<p>'Ascii-Block' (Windows executable) - Pseudo-Pacman 3D game, levels from text file (ASCII).<br>
+<header>'Ascii-Block' (Windows executable) - Pseudo-Pacman 3D game, levels from text file (ASCII).<br>
   From: 'Unity3D'.<br>
-  Author: Juan José Guerra Haba - <a href="mailto:dinertron@gmail.com">dinertron@gmail.com</a> - Junio de 2018<br>
+  Author: Juan José Guerra Haba - <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#x3a;&#100;&#105;&#110;&#x65;&#x72;&#x74;&#114;&#x6f;&#110;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#100;&#105;&#110;&#x65;&#x72;&#x74;&#114;&#x6f;&#110;&#64;&#x67;&#109;&#x61;&#x69;&#x6c;&#46;&#99;&#x6f;&#x6d;</a> - 2018 June<br />
   License: Free BSD. &amp; Open GPL v.3. Keep credit, please.<br>
-  Versión: 1.0.0<br>
-  Main File: Ascii-Block.exe </p>
+  Versión: 1.0.0<br />
+  Main File: Ascii-Block.exe 
+</header>
+<!-- <p><a href="https://sourceforge.net/p/rslib-js/"><img src="https://sourceforge.net/sflogo.php?type=8&amp;group_id=2629568" alt="Download rsLIB"></a>  </p> -->
 
-<hr>
+<hr />
+
+<h1>
+<a id="ascii-block" name="ascii-block" class="anchor" href="#ascii-block" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ascii-Block <sub style="font-size:smaller;">Emulate a 'Pseudo-Pacman' in 3D</sub></h1>
+
+<p><em>In addition to playing and having fun, you can <b>design your own levels</b> and even differentiate the types of objects used with custom textures..</em></p>
 </blockquote>
+		
 
-<h1><a id="ascii-block" class="anchor" href="#ascii-block" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ascii-block</h1>
-
-<p>It is a 3D game, it's a <i>Pseudo-Pacman</i> 3D game, with possibility of design for develop levels  from a text file (<i>ASCII</i>). </p>
+<p>It is a 3D game, it's a <i>Pseudo-Pacman</i> 3D game, with possibility of design for levels develope from a text file (<i>ASCII</i>). </p>
 
 <p>The interesting thing is that this is a creative game, not just playful. By creating levels here we are building a virtual virtual world where it is more fun to play and the possibilities and difficulty are set by ourselves.
 It is designed for two players, this depends on the design of the level; A small buttons menu is also included in the display for the main options. We also have several visual effects and sounds. </p>
 
-<p><em>'ASCII-BLOCK'</em> This game has been programmed entirely with JS code (<i>Unity</i>). It contains a converter (parser) of text characters to graphic blocks.</p>
+<p>The game is an executable binary (exe) for Windows. It is in the folder 'WinExe' and as an example it is included a file of levels '<i>levels.lvl</i>', of course totally modifiable, and a folder '<i>Textures</i>'; both optional</p>
+
+<blockquote>
+<em>'ASCII-BLOCK'</em> This game has been programmed entirely with JS code (<i>Unity</i>). It contains a converter (parser) of text characters to graphic blocks.<br />
+<b>Download the 'WinExe' folder</b>.
+</blockquote>
 
 <h2><a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
@@ -73,7 +118,7 @@ It is designed for two players, this depends on the design of the level; A small
 
 <p>With the mouse we can rotate the point of view and even zoomed. There are also shortcut keys with special functions such as <i>'reset the zoom', 'reset the tilt of the camera', 'change of vision', 'zenital camera', ...</i></p>
 
-<h2><a id="target" class="anchor" href="#target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Target:</h2>
+<h2><a id="target" class="anchor" href="#target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Objective:</h2>
 
 <p>As I said, it's simple, a 'Pseudo-Pacman' inside a labyrinth where to overcome the level you must eat all the points (or the energized coins) in addition to avoiding the enemy when he is in 'killer' mode (Red) . As in the original, when we reach an energized coin (the big ones) we have a time lapse in which we can eat the enemy (Blue).</p>
 
@@ -111,7 +156,15 @@ It is designed for two players, this depends on the design of the level; A small
 
 <p>At the moment we can modify textures for <b>coins</b>, <b>walls</b> and <b>special</b> objects using images (<i>png, jpg, gif</i> or <i>bmp</i> format) with the following key names: <i>coin</i>, <i>wall</i> and <i>special</i>. These must be included in a folder with the same name as the level number to be customized, and all of them inside another <b>Textures</b> folder located in the root directory of the game.</p>
 
-<p>The path from the executable could be: <i>'Textures / 3 / coin.png', 'Textures / 5 / wall.jpg', ...</i> Although a <b>Default</b> folder is also supported that would act as a base for unspecified levels.</p>
+<p>The path from the executable could be:
+
+<div class="highlight highlight-source-js"><pre>
+    <span class="pl-en">Textures</span>/<span class="pl-en">3</span>/<span class="pl-en">coin.png</span>, 
+    <span class="pl-en">Textures</span>/<span class="pl-en">5</span>/<span class="pl-en">wall.png</span>, ...
+</pre></div>
+
+Although a <b>Default</b> folder is also supported that would act as a base for unspecified levels.
+</p>
 
 <h2><a id="special_keys" class="anchor" href="#special_keys" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Special Keys:</h2>
 
@@ -126,189 +179,72 @@ It is designed for two players, this depends on the design of the level; A small
 
 <p>Also on the display itself we have keypads (designed for touch screens) for some of these and other actions.</p>
 
-<h2>
-<a id="developing" class="anchor" href="#developing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developing</h2>
+<hr />
 
-<p>Developed by <a href="mailto://dinertron@gmail.com" title="author">GuerraTron</a> <a href="https://github.com/2018" class="user-mention">@2018</a></p>
-
-<h3>
-<a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h3>
+<h3><a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h3>
 
 <p>Programmed with <a href="https://notepad-plus-plus.org/">Notepad ++</a>. Entirely with JS code (Unity)</p>
 
 <p>Created with <a href="https://unity3d.com">Unity3D</a>. 
  Unity is a multiplatform video game engine created by Unity Technologies, it is available as a development platform for the vast majority of OSs</p>
 
-<h3>
-<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author:</h3>
+<h3><a id="developing" class="anchor" href="#developing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developing</h3>
 
-<p>I hope it can be useful to someone as it has been for me. In this case it would be appreciated email commenting 
- use or suggestions for future improvements.  <br>
-     ¡ KEEP CREDITS, PLEASE !</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/guerratron">guerratron</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-=======
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Ascii-Block by guerratron</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-  </head>
-  <body>
-
-      <header>
-        <h1>Ascii-Block</h1>
-        <p>Emulate a 'Pseudo-Pacman' in 3D, where in addition to playing and having fun, you can <b>design your own levels</b> and even differentiate the types of objects used with custom textures..</p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/guerratron/ascii-block" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/guerratron/ascii-block/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/guerratron/ascii-block/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <blockquote>
-<hr>
-
-<p>'Ascii-Block' (Windows executable) - Pseudo-Pacman 3D game, levels from text file (ASCII).<br>
-  From: 'Unity3D'.<br>
-  Author: Juan José Guerra Haba - <a href="mailto:dinertron@gmail.com">dinertron@gmail.com</a> - Junio de 2018<br>
-  License: Free BSD. &amp; Open GPL v.3. Keep credit, please.<br>
-  Versión: 1.0.0<br>
-  Main File: Ascii-Block.exe </p>
+<p>Developed by <a href="mailto://dinertron@gmail.com" title="author">GuerraTron</a> <a href="https://github.com/2018" class="user-mention">@2018</a></p>
 
 <hr>
+
+<p><strong>AUTHOR</strong>: <code>I hope I can be of use to someone as it has been for me. In this case it would be appreciated comment use in email or suggestions for future improvements.</code>
+PLEASE, KEEP CREDITS AND LINKS. THANKS !</p>
+
+<blockquote>
+    <code>... And as he said 'George Lucas': that the force be with you. !!</code>
 </blockquote>
 
-<h1><a id="ascii-block" class="anchor" href="#ascii-block" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ascii-block</h1>
+    </section>
 
-<p>It is a 3D game, it's a <i>Pseudo-Pacman</i> 3D game, with possibility of design for develop levels  from a text file (<i>ASCII</i>). </p>
+		  <footer class="site-footer">
+        <span class="site-footer-owner"><img src="img/ascii_block_logo_mini.png" alt="ascii-block_logo" title="Ascii-Block logo" />&emsp; <a href="https://github.com/guerratron/ascii-block">Ascii-Block</a> is maintained by <a href="https://github.com/guerratron">guerratron</a>. <img src="img/torotron_logo.png" alt="guerratron logo" title="author" /></span>
 
-<p>The interesting thing is that this is a creative game, not just playful. By creating levels here we are building a virtual virtual world where it is more fun to play and the possibilities and difficulty are set by ourselves.
-It is designed for two players, this depends on the design of the level; A small buttons menu is also included in the display for the main options. We also have several visual effects and sounds. </p>
-
-<p><em>'ASCII-BLOCK'</em> This game has been programmed entirely with JS code (<i>Unity</i>). It contains a converter (parser) of text characters to graphic blocks.</p>
-
-<h2><a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>The game is an executable binary (exe) for Windows. It is in the folder 'WinExe' and as an example it is included a file of levels '<i>levels.lvl</i>', of course totally modifiable, and a folder '<i>Textures</i>'; both optional</p>
-
-<h2><a id="scenario" class="anchor" href="#scenario" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scenario:</h2>
-
-<p>The stage is a virtual world of 3D platforms with limited dimensions, where if we leave the platform when we fall into a vacuum. The point of view is in <b>perspective</b> (by default), with the camera in <b>3rd person</b> and some remote from each player.</p>
-
-<p>There is an informative front panel with the score and a sky background. The display can be partitioned if there are two players in the level, managing their cameras independently. It also shows information on the display of each player and a small button with actions such as <i>'return to the levels menu', 'disconnect the sound', 'handle the zoom', 'switch to zenital camera'</i> or <i>'exit the game'</i>.</p>
-
-<p>With the mouse we can rotate the point of view and even zoomed. There are also shortcut keys with special functions such as <i>'reset the zoom', 'reset the tilt of the camera', 'change of vision', 'zenital camera', ...</i></p>
-
-<h2><a id="target" class="anchor" href="#target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Target:</h2>
-
-<p>As I said, it's simple, a 'Pseudo-Pacman' inside a labyrinth where to overcome the level you must eat all the points (or the energized coins) in addition to avoiding the enemy when he is in 'killer' mode (Red) . As in the original, when we reach an energized coin (the big ones) we have a time lapse in which we can eat the enemy (Blue).</p>
-
-<p>We have a home screen, a level menu and the screens of each level.</p>
-
-<p>To Select a particular level we must introduce into the recreative Screen of 'pac-mania'. (don't tell me that it's not original, huh?)</p>
-
-<h2><a id="new_levels" class="anchor" href="#new_levels" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>New Levels:</h2>
-
-<p>New levels can be created by inserting a text file '<b>levels.lvl</b>' into the root folder of the game. This file uses its own syntax to define each type of block and element of the game such as <i>enemies, player, walls, coins</i>, ....</p>
-
-<h2><a id="sintax" class="anchor" href="#sintax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sintax:</h2>
-
-<ul>
-    <li>The levels must end with a control character 'low line' (<b>_</b>) for the program to take them into account; in a single line (without more characters).</li>
-    <li>Each line of text will correspond to a row of blocks (except comments or control characters).</li>
-    <li>Maximum 35 rows with a maximum of 35 columns each.</li>
-</ul>
-
-<p>Comments = <b>/</b> ó <b>;</b><br />
-   Control = <b>_</b> (new level)<br />
-   Blocks:</p>
-   
-<ul>
-    <li>bloque = <b>@</b></li>
-    <li>player = <b>P</b></li>
-    <li>enemy = <b>E</b></li>
-    <li>coin = <b>C</b></li>
-    <li>point = <b>P</b></li>
-    <li>special= <b>S</b></li>
-    <li>empty = '<b> </b>' (space)</li>
-</ul>
-
-<h2><a id="custom_textures" class="anchor" href="#custom_textures" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom Textures:</h2>
-
-<p>At the moment we can modify textures for <b>coins</b>, <b>walls</b> and <b>special</b> objects using images (<i>png, jpg, gif</i> or <i>bmp</i> format) with the following key names: <i>coin</i>, <i>wall</i> and <i>special</i>. These must be included in a folder with the same name as the level number to be customized, and all of them inside another <b>Textures</b> folder located in the root directory of the game.</p>
-
-<p>The path from the executable could be: <i>'Textures / 3 / coin.png', 'Textures / 5 / wall.jpg', ...</i> Although a <b>Default</b> folder is also supported that would act as a base for unspecified levels.</p>
-
-<h2><a id="special_keys" class="anchor" href="#special_keys" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Special Keys:</h2>
-
-<p>With the mouse we can rotate the point of view, as if we rotate the neck, and even apply zoom.</p>
-
-<ul>
-    <li><b>Alt</b>: Reset the angle of inclination.</li>
-    <li><b>Shift-Left</b>: Reset the zoom level.</li>
-    <li><b>Backspace</b>: Change of camera: Perspective or Orthographic.</li>
-    <li><b>Enter</b>: Zenital camera.</li>
-</ul>
-
-<p>Also on the display itself we have keypads (designed for touch screens) for some of these and other actions.</p>
-
-<h2>
-<a id="developing" class="anchor" href="#developing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developing</h2>
-
-<p>Developed by <a href="mailto://dinertron@gmail.com" title="author">GuerraTron</a> <a href="https://github.com/2018" class="user-mention">@2018</a></p>
-
-<h3>
-<a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h3>
-
-<p>Programmed with <a href="https://notepad-plus-plus.org/">Notepad ++</a>. Entirely with JS code (Unity)</p>
-
-<p>Created with <a href="https://unity3d.com">Unity3D</a>. 
- Unity is a multiplatform video game engine created by Unity Technologies, it is available as a development platform for the vast majority of OSs</p>
-
-<h3>
-<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author:</h3>
-
-<p>I hope it can be useful to someone as it has been for me. In this case it would be appreciated email commenting 
- use or suggestions for future improvements.  <br>
-     ¡ KEEP CREDITS, PLEASE !</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/guerratron">guerratron</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> &mdash; modified by <a href="https://github.com/guerratron">guerratron</a>. <img src="img/torotron_logo.png" alt="guerratron logo" title="guerratron logo" />.</span>
       </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+			
+      <!-- TO-TOP BUTTON -->
+    <a data-scroll data-options='{ "easing": "easeOutQuad" }' class="totop" href="#"><span style="font-size: x-large">&Delta;</span></a>
     
+			<!-- SLICK SLIDE
+			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+			<script type="text/javascript" src="javascripts/slick/slick.min.js"></script> -->
+			<!-- SMOOTH-SCROLL -->
+      <script type="text/javascript" src="javascripts/smooth-scroll/smooth-scroll.min.js"></script>
+    
+			<script>
+				// Can also be used with $(window).load(function() {
+				$(document).ready(function() {
+          //SLICK SLIDE from: http://kenwheeler.github.io/slick/
+					/*$('.slick-slide-target1').slick({
+						dots: true,
+						infinite: true,
+						speed: 600,
+						slidesToShow: 2,
+						centerMode: true,
+						variableWidth: false,
+						useCSS: true,
+						swipeToSlide: true,
+						respondTo: "min",
+						pauseOnDotsHover: true,
+						autoplay: true,
+						mobileFirst: true,
+						infinite: false,
+						focusOnSelect: true,
+						centerMode: true,
+						adaptiveHeight: false,
+					});*/
+          
+          //SMOOTH-SCROLL by https://github.com/cferdinandi THANKS!
+          smoothScroll.init();
+				});
+		</script>
+  
   </body>
 </html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Ascii-Block by guerratron</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Ascii-Block</h1>
+        <p>Emulate a 'Pseudo-Pacman' in 3D, where in addition to playing and having fun, you can <b>design your own levels</b> and even differentiate the types of objects used with custom textures..</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/guerratron/ascii-block" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/guerratron/ascii-block/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/guerratron/ascii-block/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <blockquote>
+<hr>
+
+<p>'Ascii-Block' (Windows executable) - Pseudo-Pacman 3D game, levels from text file (ASCII).<br>
+  From: 'Unity3D'.<br>
+  Author: Juan José Guerra Haba - <a href="mailto:dinertron@gmail.com">dinertron@gmail.com</a> - Junio de 2018<br>
+  License: Free BSD. &amp; Open GPL v.3. Keep credit, please.<br>
+  Versión: 1.0.0<br>
+  Main File: Ascii-Block.exe </p>
+
+<hr>
+</blockquote>
+
+<h1><a id="ascii-block" class="anchor" href="#ascii-block" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ascii-block</h1>
+
+<p>It is a 3D game, it's a <i>Pseudo-Pacman</i> 3D game, with possibility of design for develop levels  from a text file (<i>ASCII</i>). </p>
+
+<p>The interesting thing is that this is a creative game, not just playful. By creating levels here we are building a virtual virtual world where it is more fun to play and the possibilities and difficulty are set by ourselves.
+It is designed for two players, this depends on the design of the level; A small buttons menu is also included in the display for the main options. We also have several visual effects and sounds. </p>
+
+<p><em>'ASCII-BLOCK'</em> This game has been programmed entirely with JS code (<i>Unity</i>). It contains a converter (parser) of text characters to graphic blocks.</p>
+
+<h2><a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>The game is an executable binary (exe) for Windows. It is in the folder 'WinExe' and as an example it is included a file of levels '<i>levels.lvl</i>', of course totally modifiable, and a folder '<i>Textures</i>'; both optional</p>
+
+<h2><a id="scenario" class="anchor" href="#scenario" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scenario:</h2>
+
+<p>The stage is a virtual world of 3D platforms with limited dimensions, where if we leave the platform when we fall into a vacuum. The point of view is in <b>perspective</b> (by default), with the camera in <b>3rd person</b> and some remote from each player.</p>
+
+<p>There is an informative front panel with the score and a sky background. The display can be partitioned if there are two players in the level, managing their cameras independently. It also shows information on the display of each player and a small button with actions such as <i>'return to the levels menu', 'disconnect the sound', 'handle the zoom', 'switch to zenital camera'</i> or <i>'exit the game'</i>.</p>
+
+<p>With the mouse we can rotate the point of view and even zoomed. There are also shortcut keys with special functions such as <i>'reset the zoom', 'reset the tilt of the camera', 'change of vision', 'zenital camera', ...</i></p>
+
+<h2><a id="target" class="anchor" href="#target" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Target:</h2>
+
+<p>As I said, it's simple, a 'Pseudo-Pacman' inside a labyrinth where to overcome the level you must eat all the points (or the energized coins) in addition to avoiding the enemy when he is in 'killer' mode (Red) . As in the original, when we reach an energized coin (the big ones) we have a time lapse in which we can eat the enemy (Blue).</p>
+
+<p>We have a home screen, a level menu and the screens of each level.</p>
+
+<p>To Select a particular level we must introduce into the recreative Screen of 'pac-mania'. (don't tell me that it's not original, huh?)</p>
+
+<h2><a id="new_levels" class="anchor" href="#new_levels" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>New Levels:</h2>
+
+<p>New levels can be created by inserting a text file '<b>levels.lvl</b>' into the root folder of the game. This file uses its own syntax to define each type of block and element of the game such as <i>enemies, player, walls, coins</i>, ....</p>
+
+<h2><a id="sintax" class="anchor" href="#sintax" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sintax:</h2>
+
+<ul>
+    <li>The levels must end with a control character 'low line' (<b>_</b>) for the program to take them into account; in a single line (without more characters).</li>
+    <li>Each line of text will correspond to a row of blocks (except comments or control characters).</li>
+    <li>Maximum 35 rows with a maximum of 35 columns each.</li>
+</ul>
+
+<p>Comments = <b>/</b> ó <b>;</b><br />
+   Control = <b>_</b> (new level)<br />
+   Blocks:</p>
+   
+<ul>
+    <li>bloque = <b>@</b></li>
+    <li>player = <b>P</b></li>
+    <li>enemy = <b>E</b></li>
+    <li>coin = <b>C</b></li>
+    <li>point = <b>P</b></li>
+    <li>special= <b>S</b></li>
+    <li>empty = '<b> </b>' (space)</li>
+</ul>
+
+<h2><a id="custom_textures" class="anchor" href="#custom_textures" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom Textures:</h2>
+
+<p>At the moment we can modify textures for <b>coins</b>, <b>walls</b> and <b>special</b> objects using images (<i>png, jpg, gif</i> or <i>bmp</i> format) with the following key names: <i>coin</i>, <i>wall</i> and <i>special</i>. These must be included in a folder with the same name as the level number to be customized, and all of them inside another <b>Textures</b> folder located in the root directory of the game.</p>
+
+<p>The path from the executable could be: <i>'Textures / 3 / coin.png', 'Textures / 5 / wall.jpg', ...</i> Although a <b>Default</b> folder is also supported that would act as a base for unspecified levels.</p>
+
+<h2><a id="special_keys" class="anchor" href="#special_keys" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Special Keys:</h2>
+
+<p>With the mouse we can rotate the point of view, as if we rotate the neck, and even apply zoom.</p>
+
+<ul>
+    <li><b>Alt</b>: Reset the angle of inclination.</li>
+    <li><b>Shift-Left</b>: Reset the zoom level.</li>
+    <li><b>Backspace</b>: Change of camera: Perspective or Orthographic.</li>
+    <li><b>Enter</b>: Zenital camera.</li>
+</ul>
+
+<p>Also on the display itself we have keypads (designed for touch screens) for some of these and other actions.</p>
+
+<h2>
+<a id="developing" class="anchor" href="#developing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developing</h2>
+
+<p>Developed by <a href="mailto://dinertron@gmail.com" title="author">GuerraTron</a> <a href="https://github.com/2018" class="user-mention">@2018</a></p>
+
+<h3>
+<a id="tools" class="anchor" href="#tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tools</h3>
+
+<p>Programmed with <a href="https://notepad-plus-plus.org/">Notepad ++</a>. Entirely with JS code (Unity)</p>
+
+<p>Created with <a href="https://unity3d.com">Unity3D</a>. 
+ Unity is a multiplatform video game engine created by Unity Technologies, it is available as a development platform for the vast majority of OSs</p>
+
+<h3>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Author:</h3>
+
+<p>I hope it can be useful to someone as it has been for me. In this case it would be appreciated email commenting 
+ use or suggestions for future improvements.  <br>
+     ¡ KEEP CREDITS, PLEASE !</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/guerratron">guerratron</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+     <!-- TO-TOP BUTTON -->
+    <a data-scroll data-options='{ "easing": "easeOutQuad" }' class="totop" href="#"><span style="font-size: x-large">&Delta;</span></a>
+    
+			<!-- SLICK SLIDE
+			<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+			<script type="text/javascript" src="javascripts/slick/slick.min.js"></script> -->
+			<!-- SMOOTH-SCROLL -->
+      <script type="text/javascript" src="javascripts/smooth-scroll/smooth-scroll.min.js"></script>
+    
+			<script>
+				// Can also be used with $(window).load(function() {
+				$(document).ready(function() {
+          //SLICK SLIDE from: http://kenwheeler.github.io/slick/
+					/*$('.slick-slide-target1').slick({
+						dots: true,
+						infinite: true,
+						speed: 600,
+						slidesToShow: 2,
+						centerMode: true,
+						variableWidth: false,
+						useCSS: true,
+						swipeToSlide: true,
+						respondTo: "min",
+						pauseOnDotsHover: true,
+						autoplay: true,
+						mobileFirst: true,
+						infinite: false,
+						focusOnSelect: true,
+						centerMode: true,
+						adaptiveHeight: false,
+					});*/
+          
+          //SMOOTH-SCROLL by https://github.com/cferdinandi THANKS!
+          smoothScroll.init();
+				});
+		</script>
+    
+  </body>
+</html>
